@@ -7,6 +7,41 @@
     3. Criar uma função encontrarMaisFria(temperaturas) para retornar a menor temperatura registrada.
     4. Criar um loop (while) para exibir um menu e permitir ao usuário escolher uma opção até decidir sair (opção 0).
     */
+   function calcularMedia(temperaturas){
+        
+        let lista = 0
+
+        for(i of temperaturas){
+          lista+=i
+        }
+        return(alert(lista/7))
+   }
+   function encontrarMaisQuente(temperaturas){
+
+      let quente = temperaturas.sort((a, b) => a - b)
+
+     return(alert( temperaturas(6)))
+   }
+   function encontrarMaisFria(temperaturas){
+      let fria = temperaturas.sort((a, b) => a - b)
+
+     return( alert(temperaturas[0]))
+   }
+   let pergunta 
+
+   do{pergunta = prompt("opção 1:mostrar a media das temperturas (digite1)            opção 2:mostrar qual sera a temperatura mais quente(digite2),                                                                                opção 3: qual sera a tempertatura mais fria(digite 3),                           opção 4: sair do loop(digite 0)")
+
+     if(pergunta == 1){
+          alert(calcularMedia(temperaturas))
+     }
+     else if (pergunta == 2){
+          alert(encontrarMaisQuente(temperaturas))
+     }
+     else{alert(encontrarMaisFria)}
+   }
+
+
+   while(pergunta !== 0)
 
     
 </script>
